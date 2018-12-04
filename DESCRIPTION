@@ -1,6 +1,6 @@
 Package: rcmdstan
 Type: Package
-Title: Wrapper for Sakrejda's stannis, which is itself a wrapper for cmdstan
+Title: Wrapper for Sakrejda's stannis package, which is itself a wrapper for cmdstan
 Version: 0.1.0
 Author: Jacki Buros
 Maintainer: Jacki Buros <jackinovik@gmail.com>
