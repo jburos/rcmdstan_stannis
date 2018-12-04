@@ -6,7 +6,7 @@ Author: Jacki Buros
 Maintainer: Jacki Buros <jackinovik@gmail.com>
 Description: Wrapper for K Sakrejda's stannis package
     Allows user inputs to look something like rstan::stan signature
-License: GPL2
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Depends: stannis,
