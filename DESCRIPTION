@@ -1,0 +1,17 @@
+Package: rcmdstan
+Type: Package
+Title: Wrapper for Sakrejda's stannis, which is itself a wrapper for cmdstan
+Version: 0.1.0
+Author: Jacki Buros
+Maintainer: Jacki Buros <jackinovik@gmail.com>
+Description: Wrapper for K Sakrejda's stannis package
+    Allows user inputs to look something like rstan::stan signature
+License: GPL2
+Encoding: UTF-8
+LazyData: true
+Depends: stannis,
+    rstan,
+    rappdirs
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat

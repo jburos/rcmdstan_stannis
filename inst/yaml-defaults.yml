@@ -1,0 +1,16 @@
+defaults:
+  project_id : "default-project"
+  method : 'sample'
+  sample :
+    num_chains : 1
+    num_samples : 50
+    num_warmup : 50
+    save_warmup : 1
+    thin : 1
+    algorithm : "hmc"
+    hmc :
+      engine : "nuts"
+      nuts :
+        max_depth : 15
+  replicates: 1
+
