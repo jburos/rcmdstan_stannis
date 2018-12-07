@@ -21,7 +21,7 @@ cmdstan <- function(file,
                     refresh = 1,
                     stannis_yml = file.path(working_dir, glue::glue('{model_name}.yml'))) {
   if (!dir.exists(working_dir))
-    dir.create(working_dir)
+    dir.create(working_dir, recursive = T)
 
   # save data to file, if provided as a list
   if (!is.null(data_file)) {
@@ -74,9 +74,9 @@ create_run <- function(model_file, data_file, warmup, iter, chains, control = li
   binary_dir <- file.path(model_dir, 'model-binaries')
   init_dir <- file.path(model_dir, 'model-inits')
   if (!dir.exists(binary_dir))
-    dir.create(binary_dir)
+    dir.create(binary_dir, recursive = T)
   if (!dir.exists(init_dir))
-    dir.create(init_dir)
+    dir.create(init_dir, recursive = T)
   run <- list(model_name = model_name,
               sample = list(num_warmup = as.integer(warmup),
                             num_samples = as.integer(iter - warmup),
