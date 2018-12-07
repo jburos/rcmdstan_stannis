@@ -2,6 +2,7 @@
 #' @importFrom digest digest
 #' @importFrom yaml write_yaml
 #' @importFrom rstan stan_rdump
+#' @export
 cmdstan <- function(file,
                     model_name = 'anon_model',
                     model_code = '',
