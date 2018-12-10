@@ -53,7 +53,7 @@ cmdstan <- function(file,
   if (file.exists(stannis_yml)) {
     yml <- yaml::read_yaml(stannis_yml)
   } else {
-    yml <- yaml::read_yaml(system.file("inst", "yaml-defaults.yml", package="rcmdstan"))
+    yml <- yaml::read_yaml(system.file("", "yaml-defaults.yml", package="rcmdstan"))
     yml$runs <- list()
   }
   yml$runs <- list(this_run) # replace yml file with only this run
